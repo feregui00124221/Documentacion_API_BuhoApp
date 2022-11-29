@@ -1,0 +1,84 @@
+_id: wrk_b65ccf404e6e4b738e78b79181a9558b
+type: Workspace
+parentId: null
+modified: 1669740824566
+created: 1667975406025
+name: New Document
+description: >-
+  # Buho Project Rest API Documentation
+
+
+  ## Introducción
+
+
+  La siguiente documentación detalla el funcionamiento de la API que se usó para el proyecto de "Búho app". Conectada a una base de tipo Mongo, se optó por facilitar el recibimiento y envío de datos por medio del formato JSON a una instancia de datos no relacional de tipo documental. 
+
+
+  La ruta maestra de la api es la siguiente:
+
+  {{ _.user_url }}
+  	
+
+  La documentación fue generada por medio de Insomnia, y se decidió separar por dos grandes grupos:
+
+
+  ### Información del usuario
+
+
+  #### GET
+
+
+  - "Who Am I?"
+
+
+  #### POST
+
+
+  - "Sign In"
+
+  - "Sign Up"
+
+
+  ### Información de post(s)
+
+
+  #### GET
+
+
+  - "Find All"
+
+  - "Get Own Posts"
+
+  - "Get Saved Posts"
+
+  - "Find Posts by User ID"
+
+  - "Find Post by Post ID"
+
+
+  #### POST
+
+
+  - "Create"
+
+
+  #### PATCH
+
+
+  - "Toggle Visibility"
+
+  - "Toggle Like"
+
+  - "Toggle Save Post"
+
+
+  Cuando exista algún error propio de la base, se lanzará el siguiente error:
+
+  ```status:500
+
+  {
+     "message":"Error registering user"
+  }
+
+  ````
+scope: design
